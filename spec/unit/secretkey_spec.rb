@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SecretKey do
+describe SecretKey::SecretKey do
 
   let!(:key) { Faker::Number.number(15) }
   let!(:secret) { Faker::Bitcoin.address }

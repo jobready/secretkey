@@ -20,7 +20,7 @@ Or install it yourself as:
 
 To generate a token, simply run this method:
 
-    SecretKey.generate_token(key, secret, time_stamp)
+    SecretKey::SecretKey.generate_token(key, secret, time_stamp)
 
 Where:
 
