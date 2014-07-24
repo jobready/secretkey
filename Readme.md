@@ -20,7 +20,19 @@ Or install it yourself as:
 
 To generate a token, simply run this method:
 
-    SecretKey::SecretKey.generate_token(key, secret, timestamp)
+    secretkey = SecretKey::SecretKey.new(key, secret)
+    token = secretkey.token
+
+SecretKey will automatically generate a timestamp, which can be accessed by running:
+
+    secretkey.timestamp
+
+Alternatively, you can specify your own timestamp:
+
+    timestamp = Time.now.to_i
+
+    secretkey = SecretKey::SecretKey.new(key, secret, timestamp: timestamp)
+    token = secretkey.token
 
 Where:
 
