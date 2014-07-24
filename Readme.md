@@ -6,15 +6,15 @@ Ruby Gem for generating a unique access token when provided with an application 
 
 Add this line to your application's Gemfile:
 
-        gem 'secretkey'
+    gem 'secretkey'
 
 And then execute:
 
-        $ bundle install
+    $ bundle install
 
 Or install it yourself as:
 
-        $ gem install secretkey
+    $ gem install secretkey
 
 
 ## Development Guidelines
