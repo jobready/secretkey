@@ -35,8 +35,5 @@ describe SecretKey::SecretKey do
         end
       end
     end
-
-
   end
-
 end

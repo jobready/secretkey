@@ -3,8 +3,6 @@ require 'digest'
 module SecretKey
   class SecretKey
 
-    attr_accessor :timestamp
-
     def initialize(key, secret, options={})
       @key = key
       @secret = secret
@@ -18,15 +16,14 @@ module SecretKey
       Digest::SHA1.hexdigest("#{@key}:#{@secret}:#{@timestamp}")
     end
 
+    def timestamp
+      @timestamp ||= Time.now.to_i
+    end
+
     private
 
     def extract_options!
-      @timestamp = @options.fetch(:timestamp, default_timestamp)
+      @timestamp = @options.fetch(:timestamp, timestamp)
     end
-
-    def default_timestamp
-      @default_timestamp ||= Time.now.to_i
-    end
-
   end
 end
