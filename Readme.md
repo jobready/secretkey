@@ -16,6 +16,18 @@ Or install it yourself as:
 
     $ gem install secretkey
 
+## Usage
+
+To generate a token, simply run this method:
+
+    SecretKey.generate_token(key, secret, time_stamp)
+
+Where:
+
+* `key` - application key
+* `secret` - application secret
+* `time_stamp` - a Ruby Time object
+
 
 ## Development Guidelines
 
