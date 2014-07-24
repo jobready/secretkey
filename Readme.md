@@ -20,13 +20,13 @@ Or install it yourself as:
 
 To generate a token, simply run this method:
 
-    SecretKey::SecretKey.generate_token(key, secret, time_stamp)
+    SecretKey::SecretKey.generate_token(key, secret, timestamp)
 
 Where:
 
 * `key` - application key
 * `secret` - application secret
-* `time_stamp` - an epoch timestamp in seconds i.e. 2014-07-24 14:03:30 +1000 would be 1406174610 in epoch format
+* `timestamp` - an epoch timestamp in seconds i.e. 2014-07-24 14:03:30 +1000 would be 1406174610 in epoch format
 
 
 ## Development Guidelines
