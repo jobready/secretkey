@@ -1,3 +1,5 @@
+require 'digest'
+
 class SecretKey
 
   module Version
@@ -9,5 +11,10 @@ class SecretKey
   end
 
   VERSION = Version::STRING
+
+  def self.generate_token(key, secret, time_stamp)
+    str_time_stamp = time_stamp.strftime('%Y%m%d%H%M')
+    Digest::SHA1.hexdigest("#{key}:#{secret}:#{str_time_stamp}")
+  end
 
 end

@@ -3,6 +3,7 @@ SimpleCov.start
 
 require 'secretkey'
 require 'faker'
+require 'byebug'
 
 RSpec.configure do |config|
 
@@ -10,7 +11,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
-  config.color_enabled = true
+  config.color = true
 
   config.order = :random
 
