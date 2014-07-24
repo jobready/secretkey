@@ -26,7 +26,7 @@ Where:
 
 * `key` - application key
 * `secret` - application secret
-* `time_stamp` - a Ruby Time object
+* `time_stamp` - an epoch timestamp in seconds i.e. 2014-07-24 14:03:30 +1000 would be 1406174610 in epoch format
 
 
 ## Development Guidelines
