@@ -1,7 +1,5 @@
 # SecretKey
 
-=========
-
 Ruby Gem for generating a unique access token when provided with an application id, application secret and timestamp
 
 ## Installation
