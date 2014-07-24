@@ -13,8 +13,8 @@ class SecretKey
   VERSION = Version::STRING
 
   def self.generate_token(key, secret, time_stamp)
-    str_time_stamp = time_stamp.strftime('%Y%m%d%H%M')
-    Digest::SHA1.hexdigest("#{key}:#{secret}:#{str_time_stamp}")
+    raise ArgumentError, 'Time Stamp is not valid' unless time_stamp.is_a? Time
+    Digest::SHA1.hexdigest("#{key}:#{secret}:#{time_stamp.strftime('%Y%m%d%H%M')}")
   end
 
 end

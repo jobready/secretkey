@@ -18,7 +18,7 @@ describe SecretKey do
     context 'when timestamp is invalid' do
       let!(:time_stamp) { 'sometext' }
       it 'raises an invalid timestamp error' do
-        
+        expect(lambda { described_class.generate_token(key, secret, time_stamp) }).to raise_error(ArgumentError)
       end
     end
   end
