@@ -40,11 +40,6 @@ Where:
 * `secret` - application secret
 * `timestamp` - an epoch timestamp in seconds i.e. 2014-07-24 14:03:30 +1000 would be 1406174610 in epoch format
 
-
-## Development Guidelines
-
-  * https://jobready.atlassian.net/wiki/display/DEV/Development+Guidelines
-
 ## Style guidelines
 
 We try to adhere to the following coding style guidelines
