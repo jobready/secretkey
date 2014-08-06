@@ -1,5 +1,8 @@
 # SecretKey
 
+[![Code Climate](https://codeclimate.com/github/jobready/secretkey/badges/gpa.svg)](https://codeclimate.com/github/jobready/secretkey)
+[![Test Coverage](https://codeclimate.com/github/jobready/secretkey/badges/coverage.svg)](https://codeclimate.com/github/jobready/secretkey)
+
 Ruby Gem for generating a unique access token when provided with an application id, application secret and timestamp
 
 ## Installation
