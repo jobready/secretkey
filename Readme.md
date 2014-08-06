@@ -31,7 +31,7 @@ Alternatively, you can specify your own timestamp:
 
     timestamp = Time.now.to_i
 
-    secretkey = SecretKey::SecretKey.new(key, secret, timestamp)
+    secretkey = SecretKey::SecretKey.new(key, secret, timestamp: timestamp)
     token = secretkey.token
 
 Where:
