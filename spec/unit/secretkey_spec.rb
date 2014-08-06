@@ -31,7 +31,7 @@ describe SecretKey::SecretKey do
         let(:timestamp) { 'askdfjlakshfdkjasd' }
 
         it 'produces an Argument Error' do
-          expect(lambda { secret_key.token }).to raise_error(ArgumentError, 'Time Stamp is not a valid integer.')
+          expect{ secret_key.token }.to raise_error(ArgumentError, 'Time Stamp is not a valid integer.')
         end
       end
     end
