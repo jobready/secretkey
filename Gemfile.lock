@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    secretkey (1.1.0)
+    secretkey (1.1.1)
 
 GEM
   remote: https://rubygems.org/
